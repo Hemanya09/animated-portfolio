@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .services{
     background: linear-gradient(180deg, #0c0c1d,#111132);
     height:100%;
@@ -12,11 +14,20 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        // padding:10px;
+        // padding-bottom: 30px;
+
+        @include mobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
 
         p{
             font-weight: 200;
             font-size: 20px;
-            color: gray;
+            // color: gray;
+            color:orange;
             text-align: right;
 
         }
@@ -25,6 +36,10 @@
             width: 500px;
             border: none;
             border-top: 0.5px solid gray;
+
+            @include mobile{
+                width: 300px;
+            }
         }
 
     }
@@ -33,11 +48,25 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        // padding:20px;
+        padding: auto;
+
+        @include mobile{
+            width: 100%;
+        }
 
      .title{
         display:flex;
         align-items: center;
-        gap: 50px;
+        gap: 60px;
+        padding:10px;
+
+        @include mobile{
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            padding:10px;
+        }
 
 
 
@@ -47,10 +76,20 @@
                 border-radius: 50px;
                 object-fit:cover;
 
+                @include mobile{
+                   width: 100px;
+                   height: 50;
+                }
+
             }
             h1{
                 font-size: 96px;
                 font-weight: 100;
+
+                @include mobile{
+                    font-size: 36px;
+                    padding: 10px;
+                }
 
             }
             button{
@@ -61,6 +100,13 @@
                 border:none;
                 font-size: 24px;
                 cursor: pointer;
+
+                @include mobile{
+                    font-size: 16px;
+                    width: 150px;
+                    height: 50px;
+
+                }
             }
         }
 
@@ -70,6 +116,12 @@
         display:flex;
         max-width: 1366px;
         margin:auto;
+        // padding-bottom: 20px;
+
+        @include mobile{
+         flex-direction:column;
+        width: 100%; 
+        }
 
 
         .box{
@@ -78,6 +130,25 @@
             display:flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include mobile{
+                border:none;
+                align-items: center;
+                padding: 10px;
+                gap:  20px;
+            }
+            // justify-content: center;
+
+            p{
+                text-align: justify;
+                
+                @include mobile{
+                    display: none;
+                }
+            }
+            h3{
+                text-align: justify;
+            }
 
             button{
                 padding: 10px;
