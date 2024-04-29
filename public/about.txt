@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Annapurna SIL
+- Font Author: Copyright (c) 2007-2023 by SIL International
+- Font Source: https://fonts.gstatic.com/s/annapurnasil/v2/yYLy0hDY0f2iu9tPmRWtllidyG9SUZzUIZJ008A.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
