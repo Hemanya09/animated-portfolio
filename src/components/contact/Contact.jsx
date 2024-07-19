@@ -3,19 +3,32 @@ import "./contact.scss"
 import {motion,useInView} from "framer-motion";
 import emailjs from '@emailjs/browser';
 
+// const variants={
+//     initital:{
+//         y:500,
+//         opacity:0,
+
+//     },
 const variants={
-    initital:{
+    initial:{
         y:500,
         opacity:0,
-
     },
+    // animate:{
+    //     y:0,
+    //     opacity:1,
+    //     transition:{
+    //         duration:0.5,
+    //         staggerChildren:0.1,
+
+    //     }
+    // }
     animate:{
         y:0,
         opacity:1,
         transition:{
             duration:0.5,
             staggerChildren:0.1,
-
         }
     }
 }
@@ -36,15 +49,23 @@ const Contact = () => {
           .sendForm('service_mk4u1vc', 'template_hceo36o', formRef.current, {
             publicKey: 'Z46jWdJrDW-lFQOri',
           })
-          .then(
-            () => {
-              setSuccess(true);
+        //   .then(
+        //     () => {
+        //       setSuccess(true);
 
+        //     },
+        //     (error) => {
+        //       setError(true);
+        //     },
+        //   );
+        .then(
+            ()=>{
+                setSuccess(true);
             },
-            (error) => {
-              setError(true);
+            (error)=>{
+                setError(true);
             },
-          );
+        );
       };
     
 
