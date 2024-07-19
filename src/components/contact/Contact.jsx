@@ -77,10 +77,10 @@ const Contact = () => {
                     <h2>Mail</h2>
                     <span>jshubhangi.official@gmail.com</span>
                 </motion.div>
-                <motion.div className="item" variants={variants}>
+{/*                 <motion.div className="item" variants={variants}>
                     <h2>Message</h2>
                     <span>+91 88266 87305</span>
-                </motion.div>
+                </motion.div> */}
                 <motion.div className="item" variants={variants}>
                     <h2>Call</h2>
                     <span>+9188267 38755</span>
